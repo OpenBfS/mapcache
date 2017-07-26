@@ -31,8 +31,8 @@ essential features (and more!) expected from a tile caching solution.
 %build
 mkdir build
 pushd build
-%cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
-make %{?_smp_mflags}
+%cmake ..
+make
 popd
 
 %install
