@@ -37,13 +37,12 @@ popd
 
 %install
 pushd build
-rm -rf %{buildroot}
-make DESTDIR=%{buildroot} \
-    install
+rm -rf $RPM_BUILD_ROOT
+make install DESTDIR=$RPM_BUILD_ROOT
 popd
 
 %clean
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
