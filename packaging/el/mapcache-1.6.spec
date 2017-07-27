@@ -47,7 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc INSTALL README* LICENSE 
-%{_bindir}/*
+%{_bindir}/mapcache_seed
+%{_bindir}/mapcache.fcgi
 %{_libdir}/libmapcache.so
 %{_libdir}/libmapcache.so.1
 %{_libdir}/libmapcache.so.%{version}
