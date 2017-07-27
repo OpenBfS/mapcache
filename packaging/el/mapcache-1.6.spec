@@ -49,6 +49,8 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc INSTALL README* LICENSE 
 %{_bindir}/*
-%{_libdir}/*
+%{_libdir}/libmapcache.so
+%{_libdir}/libmapcache.so.1
+%{_libdir}/libmapcache.so.%{version}
 
 %changelog
