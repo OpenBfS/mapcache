@@ -15,7 +15,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 Requires:       webserver
 
-BuildRequires:  httpd-devel fcgi-devel cmake libcurl-devel
+BuildRequires:  httpd-devel fcgi-devel cmake libcurl-devel make gcc
 BuildRequires:  geos-devel proj-devel gdal-devel libjpeg-turbo-devel
 BuildRequires:  libpng-devel libtiff-devel pixman-devel sqlite-devel
 
